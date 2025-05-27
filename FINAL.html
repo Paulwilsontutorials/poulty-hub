@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hatchery Management</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #4CAF50;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffeb3b;
+        }
+
+        /* Header Styles */
+        header {
+            background: url('home.jpg') no-repeat center;
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 60px;
+        }
+
+        header h1 {
+            color: white;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
+        /* Main Content Styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+
+        /* Interactive Elements */
+        .toggle-content {
+            display: none;
+            margin-top: 1rem;
+        }
+
+        .toggle-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 0.5rem;
+            transition: background-color 0.3s;
+        }
+
+        .toggle-btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Card Grid */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .card {
+            background: #f9f9f9;
+            padding: 1rem;
+            border-radius: 4px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="FINAL.html">Home</a></li>
+            <li><a href="#introduction">News & Feed</a></li>
+            <li><a href="#housing">Resources</a></li>
+            <li><a href="about_us.html">About us</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Alimi Poultry Hub.</h1>
+    </header>
+
+    <div class="container">
+        <div class="section" id="introduction">
+            <h2>Welcome to Alimi Poultry Hub</h2>
+            <p>Discover expert advice, tips, and resources to excel in poultry farming. Whether you're a beginner or a seasoned farmer, our platform provides comprehensive guides, tutorials, and tools to help you succeed</p>
+            <button class="toggle-btn" onclick="toggleContent('intro-details')">Learn More</button>
+            <div id="intro-details" class="toggle-content">
+                <p>Key benefits of poultry farming include:</p>
+                <ul>
+                    <li>Quick return on investment</li>
+                    <li>High demand for products</li>
+                    <li>Relatively small space requirements</li>
+                </ul>
+            </div>
+    <div class="section" id="housing">
+            <h2>News & Feeds</h2>
+            <p>Proper housing is essential for poultry health and productivity.</p>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Poultry Sector in Peril as Feed Cost Doubles</h3>
+                    <p>The poultry industry  is facing severe challenges as the feed cost of chicken feed in Malawi has Doubled.</p>
+
+                    <a href="poultry_news.html" class="button">Learn More </a>
+                </div>
+            
+                <div class="card">
+                    <h3>Rising Costs Threatens Malawi's Poultry Sector as Chick Prices Hit $2.5</h3>
+                    <p></p>
+                    <a href="poultry_news.html" class="button">Learn More </a>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="size">
+            <h2>Resources</h2>
+            <p>Access our extensive library of poultry farming resources, including guides, videos, and articles</p>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Hatchery Management</h3>
+                    <p>Hatchery management involves the careful planning and operation of facilities where eggs are incubated and hatched, ensuring high hatch rates and healthy offspring. Key aspects include maintaining proper temperature, humidity, and ventilation in incubators; handling and storing eggs correctly; practicing strict hygiene and biosecurity; and providing appropriate post-hatch care such as sorting, vaccination, and brooding. Efficient record-keeping and performance monitoring are also essential to identify issues and improve productivity in poultry.</p>
+                    <a href="newtwo_modified.html" class="button">Learn More </a>
+
+                </div>
+            
+            
+            </div>
+        </div>
+
+        </div>
+
+        
+    <footer>
+        <p>&copy; 2025 Alimi Poutry Hub| All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

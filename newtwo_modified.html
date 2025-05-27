@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hatchery Management Guide</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body { scroll-behavior: smooth; background-color: #f8f9fa; }
+    .navbar { background-color: #4caf50; }
+    .navbar-brand, .nav-link { color: #fff !important; }
+    .nav-link:hover { color: #cde7cd !important; }
+    /* Header with single image tag */
+    header.header-image {
+      position: relative;
+      text-align: center;
+      color: #004d00;
+    }
+    .header-image img {
+      width: 100%;
+      height: 70vh;
+      object-fit: cover;
+      display: block;
+    }
+    .header-image .header-content {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+
+    /* Section boxes */
+    .section-box {
+      position: relative;
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .section-title {
+      font-weight: 600;
+      color: #003300;
+      margin-bottom: 1rem;
+    }
+    .center-img {
+      display: block;
+      margin: 0 auto 1rem auto;
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    /* Custom footer */
+    .footer-custom .social img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%; /* Makes the icon round */
+      object-fit: cover;
+      background-color: #3daf40; /* Optional: adds background */
+      padding: 5px;            /* Optional: adds space inside */
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds subtle shadow */
+    }
+    .footer-custom { background-color:#002600; color:#ccc; padding:3rem 1rem; }
+    .footer-custom .links { list-style:none; padding:0; display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; }
+    .footer-custom .links a { color:#fff; text-decoration:none; }
+    .footer-custom .links a:hover { text-decoration:underline; }
+    .footer-custom .social { text-align:center; margin-top:1rem; }
+    .footer-custom .social img { width:32px; margin:0 0.5rem; }
+    .footer-custom .back-top { text-align:center; margin-top:1.5rem; }
+    .footer-custom .back-top a { color:#3498db; text-decoration:none; font-weight:500; }
+    .footer-custom .back-top a:hover { text-decoration:underline; }
+  
+/* Increase content font size */
+p, li, ul, ol {
+  font-size: 1.125rem; /* ~18px */
+  line-height: 1.6;
+  text-align: left;    /* Ensures content is aligned nicely */
+}
+
+/* Optional: Align lists nicely within section boxes */
+.section-box ul, .section-box ol {
+  padding-left: 1.5rem; /* Gives room for bullet/number */
+  text-align: left;
+}
+</style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#home">HatcheryGuide</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#prerequisite">Embryology</a></li>
+          <li class="nav-item"><a class="nav-link" href="#definition">Definition</a></li>
+          <li class="nav-item"><a class="nav-link" href="#factors">Factors</a></li>
+          <li class="nav-item"><a class="nav-link" href="#construction">Construction</a></li>
+          <li class="nav-item"><a class="nav-link" href="#equipment">Equipment</a></li>
+          <li class="nav-item"><a class="nav-link" href="#management">Management</a></li>
+          <li class="nav-item"><a class="nav-link" href="#records">Records</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header with single image tag -->
+  <header id="home" class="header-image">
+    <img src="image's\DALL·E+2023-11-01+12.27.19+-+An+empty+barn,+warm+lighting,+slightly+blurred.jpg" alt="Hatchery Guide Header">
+    <div class="header-content">
+      <h1 class="display-5 fw-bold">Comprehensive Hatchery Management Guide</h1>
+      <pre class="lead">From egg storage to chick dispatch, everything you need to run a successful hatchery.</pre>
+    </div>
+  </header>
+
+  <!-- Content Sections -->
+<div class="container mt-4">
+    <section id="prerequisite" class="section-box">
+      <a href="image's\chick_embryo_development1.jpg" target="_blank">
+        <img src="image's\candling-day-5.jpg" alt="Embryology Icon" class="center-img" />
+      </a>
+      <h2 class="section-title">Pre-requisite Knowledge: Embryology of the Chicken</h2>
+      <p>Understanding normal vs. abnormal embryo development is crucial for identifying and addressing mortality causes during incubation.</p>
+    </section>
+    <section id="definition" class="section-box">
+      <h2 class="section-title">What is a Hatchery?</h2>
+      <p>A hatchery is a facility for egg storage, grading, fumigation, incubation, and hatching, designed to ensure optimal environmental control for embryo development.
+         It is basically a facility designed for the incubation and 
+hatching of poultry eggs, (primarily chickens), to produce 
+chicks for large or small-scale production.</p>
+    </section>
+    <section id="factors" class="section-box">
+      <h2 class="section-title">Factors in Establishing a Hatchery</h2>
+      <p> When establishing a hatchery in Malawi, 
+several factors must be taken into account to 
+ensure: Efficiency, Productivity, Sustainability</p>
+      <ul>
+        <li><strong>Market Demand:</strong> Analyze local needs for broilers, layers, and indigenous chicks.</li>
+        <li><strong>Capital:</strong> Budget for land, equipment, utilities, and staffing.</li>
+        <li><strong>Location:</strong> Accessibility, utilities, biosecurity, and regulatory compliance.</li>
+        <li><strong>Workforce:</strong> Skilled personnel for incubation and chick handling.</li>
+        <li><strong>Size:</strong> Capacity planning for setters and hatchers.</li>
+      </ul>
+    </section>
+
+    <section id="construction" class="section-box">
+      <img src="image's\Hb19064fc28b0460c9a6ae15d40128098W.jpg" alt="Construction Icon" class="center-img" />
+      <h2 class="section-title">Hatchery Construction & Layout</h2>
+      <p>Design separate rooms for clean and dirty operations: receiving, fumigation, setting, hatching, grading, and dispatch.</p>
+      <ul>
+        <li>Ventilation, drainage, and hygienic surfaces</li>
+        <li>Power backup (generators/solar)</li>
+        <li>Biosecurity: footbaths, entry control, change rooms</li>
+      </ul>
+    </section>
+    <section id="construction" class="section-box">
+      <img src="image's/chicken_hatchery.jpg" alt="Construction Icon" class="center-img" />
+      <h2 class="section-title"> Determination of Hatchery Size</h2>
+      <p>it depends on</p>
+      <ul>
+        <li>Capacity of setters and hatchers in the 
+incubator i.e. maximum number of eggs that 
+can be set o incubated at one time eg 5,000.</li>
+        <li>Number of eggs incubated or set/wk: 4000 
+eggs set /week </li>
+        <li>Number of chicks hatched per wk/setting: 
+3,800 chicks hatched per week</li>
+       
+      </ul>
+    </section>
+
+
+    <section id="equipment" class="section-box">
+      <h2 class="section-title">Key Equipment & Systems</h2>
+      <ul>
+        <li>Incubators (setters, hatchers) with temperature, humidity, and automatic turning</li>
+        <li>Candlers for embryo monitoring</li>
+        <li>Chick processing: grading, vaccination stations</li>
+        <li>Disinfection: foggers, UV, quats</li>
+        <li>Waste management: composting, incineration, rendering</li>
+      </ul>
+    </section>
+
+    <section id="management" class="section-box">
+      <h2 class="section-title">Hatchery Management</h2>
+      <p>From egg handling and storage to pulling the hatch and chick take-off:</p>
+      <ol>
+        <li>Egg storage (max 14 days at 18°C, 75% RH)</li>
+        <li>Incubation controls: temp, ventilation, humidity, egg position, turning</li>
+        <li>Pulling the hatch vs. take-off process</li>
+        <li>Quality chick criteria and dispatch protocols</li>
+      </ol>
+    </section>
+
+    <section id="records" class="section-box">
+      <h2 class="section-title">Records & KPIs</h2>
+      <p>Maintain detailed logs for source, incubation, hatchability, chick quality, biosecurity, and sales to optimize performance.</p>
+      <ul>
+        <li>Fertility Rate (90–95%)</li>
+        <li>Hatchability Rate (80–85%)</li>
+        <li>Chick Quality (>95% healthy chicks)</li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- Customized Footer -->
+  <footer class="footer-custom">
+    <ul class="links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#prerequisite">Embryology</a></li>
+      <li><a href="#construction">Construction</a></li>
+      <li><a href="#equipment">Equipment</a></li>
+      <li><a href="#management">Management</a></li>
+      <li><a href="#records">Records</a></li>
+      <li><a href="about_us.html">Contact Us</a></li>
+    </ul>
+    <div class="social">
+      <a href="https://facebook.com"><img src="C:\Users\ilson\Desktop\THWND\wwww\icons\images (1).png" alt="Facebook"></a>
+      <a href="https://twitter.com"><img src="C:\Users\ilson\Desktop\THWND\wwww\icons\x.png" alt="Twitter"></a>
+      <a href="https://linkedin.com"><img src="C:\Users\ilson\Desktop\THWND\wwww\icons\LinkedIn.png" alt="LinkedIn"></a>
+    </div>
+    <div class="back-top">
+      <a href="#home">Back to Top ↑</a>
+    </div>
+    <p class="text-center mt-3">&copy; 2025 HatcheryGuide. All rights reserved.</p>
+
+  </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
+  <style>
+    :root {
+      --primary-color: #4caf50;
+      --secondary-color: #ecf0f1;
+      --accent-color: #3498db;
+      --font-heading: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      --font-body: 'Roboto', sans-serif;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: var(--font-body);
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--primary-color);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-family: var(--font-heading);
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .team figure {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .team figure:hover {
+      transform: translateY(-5px);
+    }
+    .team img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
+    }
+    .team figcaption {
+      padding: 1rem;
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      position: relative;
+    }
+    .team figcaption::before {
+      content: '';
+      width: 50px;
+      height: 4px;
+      background: var(--accent-color);
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .about-text {
+      margin-bottom: 2rem;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--primary-color);
+      color: white;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>About Us</h1>
+    <p>Learn more about our mission and the people</p>
+  </header>
+  <div class="container">
+    <section class="about-text">
+      <h2>Our Mission</h2>
+      <p>We strive to deliver the best products with a focus on quality.</p>
+    </section>
+    <section class="team">
+      <figure>
+        <img src="IMG-20241127-WA0089(2).jpg" alt="Paul Wilson"
+             width="1200" height="1600"
+             srcset="IMG-20241127-WA0089(2).jpg 1x, IMG-20241127-WA0089(2)@2x.jpg 2x" />
+        <figcaption>Paul Wilson<br/><em>220100350</em></figcaption>
+      </figure>
+      <figure>
+        <img src="IMG-20250522-WA0070.jpg" alt="Henry Mwale"
+             width="1200" height="1600"
+             srcset="IMG-20250522-WA0070.jpg 1x, IMG-20250522-WA0070@2x.jpg 2x" />
+        <figcaption>Henry Mwale<br/><em>2101004</em></figcaption>
+      </figure>
+      <figure>
+        <img src="IMG-20250522-WA0057.jpg" alt="Natasha Salinga"
+             width="1200" height="1600"
+             srcset="IMG-20250522-WA0057.jpg 1x, IMG-20250522-WA0057@2x.jpg 2x" />
+        <figcaption>Natasha Salinga<br/><em>210100498</em></figcaption>
+      </figure>
+      <figure>
+        <img src="IMG-20250522-WA0055.jpg" alt="Thomas Banda"
+             width="1200" height="1600"
+             srcset="IMG-20250522-WA0055.jpg 1x, IMG-20250522-WA0055@2x.jpg 2x" />
+        <figcaption>Thomas Banda<br/><em>210100430</em></figcaption>
+      </figure>
+      <figure>
+        <img src="IMG-20250522-WA0066.jpg" alt="Emmanuel Malunga"
+             width="1200" height="1600"
+             srcset="IMG-20250522-WA0066.jpg 1x, IMG-20250522-WA0066@2x.jpg 2x" />
+        <figcaption>Emmanuel Malunga<br/><em>200100453</em></figcaption>
+      </figure>
+      <figure>
+        <img src="IMG_20250523_053830_123.jpg" alt="Vitumbiko Nkunika"
+             width="1200" height="1600"
+             srcset="IMG_20250523_053830_123.jpg 1x, IMG_20250523_053830_123@2x.jpg 2x" />
+        <figcaption>Vitumbiko Nkunika<br/><em>210100490</em></figcaption>
+      </figure>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2025 Harchery Management. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

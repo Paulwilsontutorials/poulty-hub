@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loading…</title>
+  <style>
+    /* Full-page reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      width: 100%; height: 100%;
+      font-family: sans-serif;
+      background: #f0f0f0;
+      overflow: hidden;
+    }
+    /* Centering container */
+    .loading-screen {
+      position: relative;
+      width: 100%; height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    /* Background graphic (replace URL with your image) */
+    .logo {
+      width: 200px;
+      height: 200px;
+      background: url('Can-You-Hatch-Eggs-From-the-Grocery-Store-FT-BLOG0225-09053169f274417aa9a8b79645797a82.jpg')
+                  center center no-repeat;
+      background-size: contain;
+      position: relative;
+    }
+
+    /* Spinner dots wrapper */
+    .spinner {
+      position: absolute;
+      top: 50%; left: 50%;
+      width: 120px; height: 120px;
+      margin: -60px 0 0 -60px;
+      animation: rotate 2s linear infinite;
+    }
+
+    /* Each dot */
+    .spinner div {
+      position: absolute;
+      width: 12px; height: 12px;
+      background: #4caf50;
+      border-radius: 50%;
+      top: 50%; left: 50%;
+      margin: -6px;
+    }
+    .spinner div:nth-child(1) { transform: translate(-50%, -100px); }
+    .spinner div:nth-child(2) { transform: rotate(60deg) translate(-50%, -100px); }
+    .spinner div:nth-child(3) { transform: rotate(120deg) translate(-50%, -100px); }
+    .spinner div:nth-child(4) { transform: rotate(180deg) translate(-50%, -100px); }
+    .spinner div:nth-child(5) { transform: rotate(240deg) translate(-50%, -100px); }
+    .spinner div:nth-child(6) { transform: rotate(300deg) translate(-50%, -100px); }
+
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+
+    /* Loading text */
+    .loading-text {
+      margin-top: 260px;
+      font-size: 1.2rem;
+      color: #555;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="loading-screen">
+    <div class="logo">
+      <div class="spinner">
+        <div></div><div></div><div></div>
+        <div></div><div></div><div></div>
+      </div>
+    </div>
+    <div class="loading-text">Loading…</div>
+  </div>
+</body>
+</html>

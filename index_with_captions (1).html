@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Index</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f8f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #4caf50;
+      color: #050505;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #75e479, #65d169);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .image-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .image-card img {
+      width: 100%;
+      display: block;
+    }
+
+    .image-card:hover {
+      transform: scale(1.03);
+    }
+
+    .caption {
+      padding: 1rem;
+      font-size: 1rem;
+      color: #3f4e3f;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #4caf50;
+      color: #7bd17d;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Index</h1>
+  </header>
+  <section class="hero">
+    <h1>Welcome to Index</h1>
+    <p>Explore our gallery of curated visuals.</p>
+  </section>
+  <section class="gallery">
+    <div class="image-card">
+      <img src="image's/hen-laying-eggs.jpg" alt="Image 1" />
+      <div class="caption">hen-laying</div>
+    </div>
+    <div class="image-card">
+      <img src="image's/X-Treck-1.jpg" alt="Image 2" />
+      <div class="caption">Chick room</div>
+    </div>
+    <div class="image-card">
+      <img src="image's/Can-You-Hatch-Eggs-From-the-Grocery-Store-FT-BLOG0225-09053169f274417aa9a8b79645797a82.jpg" alt="Image 3" />
+      <div class="caption">health Chick</div>
+    </div>
+    <div class="image-card">
+      <img src="image's/pexels-arthousestudio-4530413.jpg" alt="Image 4" />
+      <div class="caption">Caption for Image 4</div>
+    </div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 Index Website</p>
+  </footer>
+</body>
+</html>
